@@ -1,0 +1,61 @@
+@media screen and (min-width: 700px) {
+  .menu-mobile {
+      display: none
+  }
+
+  .nav-mobile {
+      display: none
+  }
+}
+
+
+@media screen and (max-width: 699px) {
+  .app-bar {
+      display: none
+  }
+
+  .nav-mobile {
+      z-index: 10;
+      background-color: #fff;
+      width: 100%;
+      position: absolute;
+      -webkit-transform: translate(-100%, 0);
+      transform: translate(-100%, 0);
+      transition: transform 0.3s ease
+  }
+
+  .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0)
+  }
+
+  .nav-item-mobile {
+      display: list-item;
+      color: black;
+      width: 100%;
+      text-align: left
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 20px
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+      max-width: 1200px
+  }
+}

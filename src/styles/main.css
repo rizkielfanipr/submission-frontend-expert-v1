@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend', sans-serif;
+}
+
+body {
+  font-size: 15px;
+  color: black;
+}
+
+.app-bar {
+  background-color: #F99417;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none;
+  position: fixed;
+  z-index: 2;
+}
+
+.nav-list {
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.app-bar-icon {
+  width: 20%;
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
+  color: white;
+}
+
+.nav-items {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.nav-items a {
+  display: block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: white;
+  width: 100%; 
+  height: 44px; 
+  line-height: 44px;
+  text-align: center;
+}
+
+.nav-items :hover {
+  font-weight: bold;
+  font-size: 15px;
+  color: yellow;
+}
+
+.app-bar a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: white ;
+}
+
+.app-bar a:hover {
+  text-decoration: none;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  text-align: center;
+  background-image: url("../public/images/heros/hero-image_2.jpg");
+  background-position: center;
+  background-color: green;
+  border: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.jumbotron .jumbotron-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.jumbotron-inner {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.jumbotron-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.jumbotron-text {
+  color: #fff;
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 32px;
+}
+
+.content-title {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-title h1 {
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+.card {
+  margin: 32px auto auto;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+
+.card-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+
+.card-item-content {
+  padding: 18px; 
+}
+
+.card-item-img {
+  width: 100%;
+  max-height: 150px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.restaurant-rating {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #F99417;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px 10px 5px;
+}
+
+.restaurant-title {
+  font-weight: 500;
+  font-size: 18px; 
+  margin-top: 20px;
+}
+
+.restaurant-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.restaurant-description {
+  margin-top: 20px; 
+  font-size: 14px; 
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+footer {
+  background-color: #F99417;
+  color: white;
+  font-size: 14px;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-mobile {
+  background-color: #F99417;
+  color: white;
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  padding: 8px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.text-logo-mobile {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.nav-mobile {
+  background-color: #F99417;
+  width: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative; /* Tambahkan properti position */
+  top: 80px; /* Sesuaikan dengan tinggi .menumob */
+}
+
+.nav-list-mobile {
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.nav-item-mobile {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: right;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black; /* Ubah warna teks menjadi hitam */
+}
+
+.toggle-menu {
+  display: flex;
+  align-items: center; 
+}
+
+.toggle-menu a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+.nav-mobile a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+}
+
